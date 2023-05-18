@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #686de0;
+  min-height: 100vh;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #9f68e0;
+  color: #fff;
+  border: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 0.2rem 2.5rem;
+  font-size: 0.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+.button:active {
+  transform: scale(0.97);
+}
+
+.Caja {
+  padding: 3.12rem 1.25rem;
+  width: min(100%, 50rem);
+  min-height: 10rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Caja .text1 {
+  width: min(100%, 30rem);
+}
+
+.contentCaja {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  width: 100%;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+.text2 {
+  margin: 0;
+  opacity: 0.8;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+}
+
+.Container {
+  width: min(100%, 60rem);
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/*# sourceMappingURL=index.css.map */
