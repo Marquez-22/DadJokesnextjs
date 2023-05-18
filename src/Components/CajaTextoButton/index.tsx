@@ -13,7 +13,7 @@ interface CajaTextoButtonProps {
 
 export const CajaTextoButton = ({ type = "btn" }: CajaTextoButtonProps) => {
     const LISTATEXTO = [ //funcion para cambiar texto
-    "The Swiss must ve been pretty confident in their chances of victory if they included a corkscrew in their army knife.",
+        "The Swiss must ve been pretty confident in their chances of victory if they included a corkscrew in their army knife.",
         "What time did the man go to the dentist? Tooth hurt-y.",
         "What did the shy pebble wish for? That she was a little boulder.",
         "What did the judge say to the dentist? Do you swear to pull the tooth, the whole tooth and nothing but the tooth?",
@@ -25,12 +25,12 @@ export const CajaTextoButton = ({ type = "btn" }: CajaTextoButtonProps) => {
     const [currentTexto, setCurrentTexto] = useState(0)
 
     const CambiarTexto = () => {
-        setCurrentTexto((pre)=>{
-            if(pre +1 >= catidadDeTextos){
+        setCurrentTexto((pre) => {
+            if (pre + 1 >= catidadDeTextos) {
                 //regrese al inicio
                 return 0
             }
-            return pre +1
+            return pre + 1
         })
     }
 
@@ -39,7 +39,7 @@ export const CajaTextoButton = ({ type = "btn" }: CajaTextoButtonProps) => {
             <Caja>
                 <Text
                     type="text2"
-                > Don't Laugh Challenge</Text>
+                > {"Don't Laugh Challenge"}</Text>
                 <Text>
                     {LISTATEXTO[currentTexto]}
                 </Text>
